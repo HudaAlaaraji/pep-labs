@@ -8,7 +8,7 @@ import javax.lang.model.util.ElementScanner6;
  * 
  * Additional Resource if needed: https://www.oreilly.com/library/view/java-for-dummies/9781118239742/a17.html
  */
-    public class Comparators{
+    public class Comparators {
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
@@ -83,6 +83,4 @@ import javax.lang.model.util.ElementScanner6;
         // return false;
     }
 }
-
-
 }
