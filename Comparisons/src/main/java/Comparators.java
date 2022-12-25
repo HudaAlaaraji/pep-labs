@@ -41,7 +41,7 @@ public class Comparators {
     if( a < b){
         System.out.println("true");
     }
-   else
+    else
    {
         System.out.println("false");
     }
