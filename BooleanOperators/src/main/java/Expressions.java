@@ -15,13 +15,11 @@ public class Expressions {
      * @return if b is true, return true. if b is false, return false.
      */
     public boolean returnBoolean(boolean b){
-        if (b==true){
-            System.out.println("true");
+        while (b==true){
+            return true;
         }
-        else if (b==false){
-            System.out.println("false");
-        }
-      
+        // (b==false){
+            return false;
         }
         
     /**
@@ -33,12 +31,9 @@ public class Expressions {
       while (b == true){
         return false;
       }
-     while ( b == false) {
+     // ( b == false) {
         return true;
      }
-
-    }
-    }
 
     /**
      * @param b1 a true/false value.
@@ -50,9 +45,8 @@ public class Expressions {
         while (b1 & b2 == true){
         return true;
         }
-        while  (b1 & b2 == false|true){
+        //  (b1 & b2 == false|true){
             return false;
-        }
         }
 
     /**
@@ -65,11 +59,9 @@ public class Expressions {
         while (b1| b2 == true){
             return true;
         }
-        while (b1 & b2==false){
+        // (b1 & b2==false){
             return false;
     }
-
-}
 
 }
 
