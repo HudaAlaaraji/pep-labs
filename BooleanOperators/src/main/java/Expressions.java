@@ -1,4 +1,5 @@
 
+
 /**
  * In order to make our programs even more impressive and interactive, we need to learn how to better leverage
  * boolean expressions. This will allow our programs to follow their own logic. For this example, you should look into
@@ -14,16 +15,27 @@ public class Expressions {
      * @return if b is true, return true. if b is false, return false.
      */
     public boolean returnBoolean(boolean b){
-        return false;
-    }
-
+        if (b==true){
+            System.out.println("true");
+        }
+        else if (b==false){
+            System.out.println("false");
+        }
+      
+        }
+        
     /**
      * @param b a true/false value.
      * @return if b is true, return false. if b is false, return true.
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnNot(boolean b){
+      while (b = true){
         return false;
+      }
+     while (b = false){
+        return true;
+     }
     }
 
     /**
@@ -33,8 +45,13 @@ public class Expressions {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnAnd(boolean b1, boolean b2){
-        return false;
-    }
+        while (b1 & b2 == true){
+        return true;
+        }
+        while (b1 & b2 == false|true){
+            return false;
+        }
+        }
 
     /**
      * @param b1 a true/false value.
@@ -43,8 +60,13 @@ public class Expressions {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnOr(boolean b1, boolean b2){
-        return false;
+        while (b1| b2 == true){
+            return true;
+        }
+        while (b1 & b2==false){
+            return false;
     }
 
+}
 
 }
