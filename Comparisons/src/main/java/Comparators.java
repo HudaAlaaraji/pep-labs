@@ -8,18 +8,18 @@ import javax.lang.model.util.ElementScanner6;
  * 
  * Additional Resource if needed: https://www.oreilly.com/library/view/java-for-dummies/9781118239742/a17.html
  */
-public class Comparators {
+    public class Comparators{
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is equal to b, false otherwise.
      */
-    if( a == b){ 
-        System.out.println("true");
+    if( a = b){ 
+      //  return true;
     }
     else
     { 
-       System.out.println("false");
+      // return false;
     }
     /**
      * @param a the first number to be compared.
@@ -27,11 +27,11 @@ public class Comparators {
      * @return true if a is greater than b, false otherwise.
      */
     if( a > b){
-        System.out.println("true");
+        // return true;
     }
     else
     {
-        System.out.println("false");
+        // return false;
     }
     /**
      * @param a the first number to be compared.
@@ -39,11 +39,11 @@ public class Comparators {
      * @return true if a is less than b, false otherwise.
      */
     if( a < b){
-        System.out.println("true");
+       // return true;
     }
     else
    {
-        System.out.println("false");
+        // return false;
     }
     /**
      * @param a the first number to be compared.
@@ -51,11 +51,11 @@ public class Comparators {
      * @return true if a is greater than or equal to b, false otherwise.
      */
     if (a >= b){
-        System.out.println("true");
+        // return true;
     }
      else
     {
-        System.out.println("false");
+       // return false;
     }
     /**
      * @param a the first number to be compared.
@@ -63,11 +63,11 @@ public class Comparators {
      * @return true if a is less than or equal to b, false otherwise.
      */
     if(a <= b){
-        System.out.println("true");
+        // return true;
     }
     else
     {
-       System.out.println("false");
+       // return false;
     }
 
     /**
@@ -76,11 +76,13 @@ public class Comparators {
      * @return true if a is not equal to b, false otherwise.
      */
     if(a != b){
-        System.out.println("true");
+        // return true;
     }
     else
     {
-        System.out.println("false");
+        // return false;
     }
 }
 
+
+}
