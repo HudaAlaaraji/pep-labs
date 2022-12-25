@@ -30,12 +30,14 @@ public class Expressions {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnNot(boolean b){
-      while (b = true){
+      while (b == true){
         return false;
       }
-     while (b = false){
+     while ( b == false) {
         return true;
      }
+
+    }
     }
 
     /**
@@ -48,7 +50,7 @@ public class Expressions {
         while (b1 & b2 == true){
         return true;
         }
-        while (b1 & b2 == false|true){
+        while  (b1 & b2 == false|true){
             return false;
         }
         }
@@ -70,3 +72,5 @@ public class Expressions {
 }
 
 }
+
+
