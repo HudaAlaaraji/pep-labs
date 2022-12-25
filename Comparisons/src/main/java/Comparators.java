@@ -1,3 +1,4 @@
+import javax.lang.model.util.ElementScanner6;
 
 /**
  * If we want to make programs that "do something", we're going to need to create instructions that change
@@ -13,54 +14,60 @@ public class Comparators {
      * @param b the second number to be compared.
      * @return true if a is equal to b, false otherwise.
      */
-    if(int a == int b){ 
-        return true;
+    if( a == b){ 
+        System.out.println("true");
     }
-    if else
+    else
     { 
-       return false;
+       System.out.println("false");
     }
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is greater than b, false otherwise.
      */
-    if(int a > int b){
-        return true;
+    if( a > b){
+        System.out.println("true");
     }
-    if else{
-        return false;
+    else
+    {
+        System.out.println("false");
     }
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is less than b, false otherwise.
      */
-    if(int a < int b){
-        return true;
+    if( a < b){
+        System.out.println("true");
     }
-    if else{
-        return false;
+   else
+   {
+        System.out.println("false");
     }
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is greater than or equal to b, false otherwise.
      */
-    if (int a >= int b){
-        return true;
+    if (a >= b){
+        System.out.println("true");
     }
-    if else
+     else
     {
-        return false;
+        System.out.println("false");
     }
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is less than or equal to b, false otherwise.
      */
-    if(int a <= int b){
-        return false;
+    if(a <= b){
+        System.out.println("true");
+    }
+    else
+    {
+       System.out.println("false");
     }
 
     /**
@@ -68,10 +75,12 @@ public class Comparators {
      * @param b the second number to be compared.
      * @return true if a is not equal to b, false otherwise.
      */
-    if(int a != int b){
-        return true;
+    if(a != b){
+        System.out.println("true");
     }
-    if else{
-        return false;
+    else
+    {
+        System.out.println("false");
     }
 }
+
