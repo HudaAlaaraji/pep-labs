@@ -14,36 +14,36 @@ import javax.lang.model.util.ElementScanner6;
      * @param b the second number to be compared.
      * @return true if a is equal to b, false otherwise.
      */
-    if( a = b){ 
-      //  return true;
+    if ( a == b){ 
+    System.out.println("true");
     }
     else
     { 
-      // return false;
+    System.out.println("false");
     }
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is greater than b, false otherwise.
      */
-    if( a > b){
-        // return true;
+    if ( a > b){
+    System.out.println("true");
     }
     else
     {
-        // return false;
+    System.out.println("false");
     }
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is less than b, false otherwise.
      */
-    if( a < b){
-       // return true;
+    if ( a < b){
+    System.out.println("true");
     }
     else
-   {
-        // return false;
+    {
+    System.out.println("false");
     }
     /**
      * @param a the first number to be compared.
@@ -51,23 +51,23 @@ import javax.lang.model.util.ElementScanner6;
      * @return true if a is greater than or equal to b, false otherwise.
      */
     if (a >= b){
-        // return true;
+    System.out.println("true");
     }
-     else
+    else
     {
-       // return false;
+    System.out.println("false");
     }
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is less than or equal to b, false otherwise.
      */
-    if(a <= b){
-        // return true;
+    if (a <= b){
+    System.out.println("true");
     }
     else
     {
-       // return false;
+    System.out.println("false");
     }
 
     /**
@@ -75,12 +75,12 @@ import javax.lang.model.util.ElementScanner6;
      * @param b the second number to be compared.
      * @return true if a is not equal to b, false otherwise.
      */
-    if(a != b){
-        // return true;
+    if (a != b){
+    System.out.println("true");
     }
     else
     {
-        // return false;
+    System.out.println("false");
     }
 }
 }
