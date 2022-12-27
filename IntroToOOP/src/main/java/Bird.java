@@ -48,12 +48,12 @@ public class Bird {
     public String sound(){
        String sound = new String();
         if (ageMonths < 3) {
-        return Tweet;
+        return "Tweet";
     }
     else 
     if (ageMonths >= 3)
     {
-        return Chirp;
+        return "Chirp";
     }
     }
 
