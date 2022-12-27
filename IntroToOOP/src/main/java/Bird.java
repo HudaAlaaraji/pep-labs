@@ -45,8 +45,8 @@ public class Bird {
      * @return "Tweet" if ageMonths is less than 3 and "Chirp" if ageMonths is
      *  * greater than or equal to 3.
      */
-    public String sound(){
-       String sound = new String();
+    public String Sound(){
+       String TweetANewString = new String();
         if (ageMonths < 3) {
         return "Tweet";
     }
