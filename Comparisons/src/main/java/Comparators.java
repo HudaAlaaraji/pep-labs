@@ -1,4 +1,3 @@
-import javax.lang.model.util.ElementScanner6;
 
 /**
  * If we want to make programs that "do something", we're going to need to create instructions that change
@@ -8,79 +7,54 @@ import javax.lang.model.util.ElementScanner6;
  * 
  * Additional Resource if needed: https://www.oreilly.com/library/view/java-for-dummies/9781118239742/a17.html
  */
-    public class Comparators{
+public class Comparators {
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is equal to b, false otherwise.
      */
-        if ( a == b){ 
-            System.out.println("true");
-        }
-        else
-        { 
-            System.out.println("false");
-        }
+    public boolean isEqual(int a, int b){
+       return a == b;
+    }
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is greater than b, false otherwise.
      */
-        if ( a > b){
-            System.out.println("true");
-        }
-        else
-        {
-            System.out.println("false");
-        }
+    public boolean greaterThan(int a, int b){
+       return a > b;
+    }
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is less than b, false otherwise.
      */
-        if ( a < b){
-            System.out.println("true");
-        }
-        else
-        {
-            System.out.println("false");
-        }
+    public boolean lessThan(int a, int b){
+        return a < b;
+    }
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is greater than or equal to b, false otherwise.
      */
-        if (a >= b){
-            System.out.println("true");
-        }
-        else
-        {
-            System.out.println("false");
-        }
+    public boolean greaterThanOrEqualTo(int a, int b){
+        return a >= b;
+    }
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is less than or equal to b, false otherwise.
      */
-        if (a <= b){
-            System.out.println("true");
-        }
-        else
-        {
-            System.out.println("false");
-        }
+    public boolean lessThanOrEqualTo(int a, int b){
+        return a <= b;
+    }
 
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is not equal to b, false otherwise.
      */
-        if (a != b){
-            System.out.println("true");
-        }
-        else
-        {
-            System.out.println("false");
-        }
+    public boolean notEqualTo(int a, int b){
+        return a != b;
     }
-
+}
