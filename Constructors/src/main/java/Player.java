@@ -1,3 +1,4 @@
+import javax.lang.model.util.ElementScanner6;
 
 /**
  * This class contains two constructors, but currently the constructors have no behavior,
@@ -48,7 +49,17 @@ public class Player {
      * @param level the starting level of the player to be created.
      */
     public Player(String playerName, int level){
-
+        this.playerName = playerName;
+        this.level =level;
+        if(playerName == "Frodo"){
+        System.out.println("Frodo"+ 1);
+        }
+        else if(playerName =="Sam"){
+            System.out.println("Sam"+1);
+        }
+        else
+         {
+            System.out.println("Gollum"+5);
+        }
     }
-
 }
