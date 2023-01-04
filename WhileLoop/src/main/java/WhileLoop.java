@@ -35,13 +35,12 @@ public class WhileLoop {
     public int whileExample(int  end){
         int sum = 0;
         int i = 0;
-        // while (i < 5){
+        // while(i < 5)
             sum = sum + i;
-            i++;
             System.out.println("sum =" + sum);
         }
     }
-}
+
 
     
      
