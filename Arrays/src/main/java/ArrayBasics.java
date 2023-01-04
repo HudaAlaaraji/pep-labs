@@ -39,7 +39,7 @@ public class ArrayBasics {
      * @return nothing. Because of pass-by-reference, any change to the array will be reflected across our java program.
      */
     public void setNthElementOfArray(int[] arr, int n, int val){
-        return (arr[n]);
+        return arr[n];
     }
 
     /**
@@ -50,3 +50,4 @@ public class ArrayBasics {
         return (new int[n]);
     }
 }
+ 
