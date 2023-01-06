@@ -41,9 +41,10 @@ public class ForLoop {
      */
     public String returnNumbers(int start, int end){
         String buildingString = "";
-        // for(int i = start; i < end; i++){
-            System.out.print(start);
+        for(int i = start; i < end; i++){
+            return(start);
             buildingString = buildingString + start + " ";
-        return buildingString;
+            return buildingString;
     }
+}
 }
