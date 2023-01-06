@@ -32,7 +32,8 @@ public class Player {
      * @param playerName the name of the player to be created.
      */
     public Player(String playerName){
-
+        this.playerName = playerName;
+        this.level = 1 ;
     }
 
     /**
@@ -51,15 +52,6 @@ public class Player {
     public Player(String playerName, int level){
         this.playerName = playerName;
         this.level =level;
-        if(playerName == "Frodo"){
-        System.out.println("Frodo"+ 1);
-        }
-        else if(playerName =="Sam"){
-            System.out.println("Sam"+1);
-        }
-        else
-         {
-            System.out.println("Gollum"+5);
+        
         }
     }
-}
