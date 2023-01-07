@@ -30,9 +30,7 @@ public class ReturnArrayContents {
     public String arrayToString(int[] nums){
         String str = "";
         for(int i = 0; i < nums.length; i++){
-
-      // code here
-      
+          str += nums[i] + "";
         }
         return str;
     }
