@@ -15,10 +15,10 @@ public class EvenOrOdd {
      */
     public String decide(int n){
         if( n % 2 == 0 ){
-            return "Even";
+            System.out.println("Even");
         }
         else if( n % 2 == 1 ){
-            return "Odd";
+            System.out.println("Odd");
         }
     }
 }
