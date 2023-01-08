@@ -29,7 +29,8 @@ public class SetExercise {
      * @return the size of set. (number of values)
      */
     public int getSize(Set<Integer> set){
-        return 0;
+        int size = set.size();
+        return size;
     }
 
     /**
