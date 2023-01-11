@@ -29,9 +29,10 @@ public class ListExercise {
      *
      * @return a List<Integer> object.
      */
-    public ArrayList<Integer> nums= new ArrayList<Integer>();
+    public ArrayList<Integer> nums= new ArrayList<Integer>(){
         for(int i : nums){
-        System.out.println(i);
+            System.out.println(i);
+    }
 }
 
     /**
