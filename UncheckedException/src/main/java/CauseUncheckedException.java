@@ -1,3 +1,5 @@
+import java.io.UncheckedIOException;
+
 import com.fasterxml.jackson.databind.jsontype.SubtypeResolver;
 
 public class CauseUncheckedException {
@@ -15,7 +17,6 @@ public class CauseUncheckedException {
      * event happens, like running out of computer memory.
      */
     public void throwUncheckedException(){
-       throw new UncheckedException(" ");
-       }
+        throw new RuntimeException();
     }
 }
