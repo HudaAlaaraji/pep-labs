@@ -29,9 +29,10 @@ public class ListExercise {
      *
      * @return a List<Integer> object.
      */
-    public ArrayList<Integer> nums= new ArrayList<Integer>(){
-        return nums;
-    }
+    public ArrayList<Integer> nums= new ArrayList<Integer>();
+        for(int i : nums){
+        System.out.println(i);
+}
 
     /**
      * Get the size of a list.
@@ -94,6 +95,8 @@ public class ListExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void updateAtPosition(List<Integer> list, int position, int value){
+
         list.set(position, "value");
     }
 }
+
