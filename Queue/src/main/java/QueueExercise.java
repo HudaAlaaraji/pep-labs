@@ -1,11 +1,8 @@
 
-import java.util.*;
-
 /**
  * TODO: switch to deque
  */
-
-import java.util.Queue;
+import java.util.*;
 
 /**
  * Queues are FIFO - first in, first out, like a checkout line. They are used in algorithms where it is needed to keep
@@ -33,8 +30,7 @@ public class QueueExercise {
      */
     public Queue<String> createQueue(){
         Deque<String> deque = new LinkedList<String>();
-        Queue<Integer> q =new LinkedList<>();
-        System.out.println("Elements of queue" + q);
+        return deque;
     }
 
     /**
@@ -43,8 +39,8 @@ public class QueueExercise {
      * @return the length of queue.
      */
     public int getSize(Queue<String> queue){
-        String size = q.size();
-        System.out.println("Size of Queue-" + size);
+        int size = queue.size();
+        return queue.size();
     }
 
     /**
@@ -54,9 +50,8 @@ public class QueueExercise {
      * @param item a String that should be added to Queue.
      */
     public void addToEndOfQueue(Queue<String> queue, String item){
-        System.out.println(q.addLast("item (Tail)"));
+        queue.add(item);
     }
-
     /**
      * Remove an item from a queue, and return the removed item.
      * (The method used to remove items from queues also returns the item.)
@@ -64,9 +59,8 @@ public class QueueExercise {
      * @return the next String due to be removed (polled) from the Queue<String> (the oldest item in the queue.)
      */
     public String removeFromStartOfQueue(Queue<String> queue){
-        String removedele = q.remove();
-        System.out.println("removed element-"+ removedele);
-        System.out.println(q);
+        String removedele = queue.remove();
+        return removedele;
     }
 
     /**
@@ -75,7 +69,7 @@ public class QueueExercise {
      * @return the next String due to be removed (peeked) from the Queue<String> (the oldest item in the queue.)
      */
     public String getStartOfQueueWithoutRemoving(Queue<String> queue){
-        String head = q.peek();
-        System.out.println("head of queue-" + head);
+        String head = queue.peek();
+        return head;
     }
 }
