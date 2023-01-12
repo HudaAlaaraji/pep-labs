@@ -1,3 +1,6 @@
+
+import java.util.*;
+
 /**
  * TODO: switch to deque
  */
@@ -29,7 +32,9 @@ public class QueueExercise {
      * Stack behavior.
      */
     public Queue<String> createQueue(){
-        System.out.println("pq.next()+ " ");
+        Deque<String> deque = new LinkedList<String>();
+        Queue<Integer> q =new LinkedList<>();
+        System.out.println("Elements of queue" + q);
     }
 
     /**
@@ -38,7 +43,8 @@ public class QueueExercise {
      * @return the length of queue.
      */
     public int getSize(Queue<String> queue){
-        return queue.size();
+        String size = q.size();
+        System.out.println("Size of Queue-" + size);
     }
 
     /**
@@ -48,7 +54,7 @@ public class QueueExercise {
      * @param item a String that should be added to Queue.
      */
     public void addToEndOfQueue(Queue<String> queue, String item){
-        return Queue.();
+        System.out.println(q.addLast("item (Tail)"));
     }
 
     /**
@@ -58,7 +64,9 @@ public class QueueExercise {
      * @return the next String due to be removed (polled) from the Queue<String> (the oldest item in the queue.)
      */
     public String removeFromStartOfQueue(Queue<String> queue){
-        return queue.poll();
+        String removedele = q.remove();
+        System.out.println("removed element-"+ removedele);
+        System.out.println(q);
     }
 
     /**
@@ -67,6 +75,7 @@ public class QueueExercise {
      * @return the next String due to be removed (peeked) from the Queue<String> (the oldest item in the queue.)
      */
     public String getStartOfQueueWithoutRemoving(Queue<String> queue){
-        return "";
+        String head = q.peek();
+        System.out.println("head of queue-" + head);
     }
 }
