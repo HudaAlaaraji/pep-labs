@@ -29,7 +29,7 @@ public class QueueExercise {
      * Stack behavior.
      */
     public Queue<String> createQueue(){
-        return null;
+        System.out.println("pq.next()+ " ");
     }
 
     /**
