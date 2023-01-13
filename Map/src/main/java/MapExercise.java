@@ -26,11 +26,9 @@ public class MapExercise {
      * so here Integer is a wrapper for int.
      */
     public Map<Integer, String> createMap(){
-        Map<Integer, String> createMap = new Map<Integer, String>();
-        for(String i : Map.keySet()){
-            System.out.println(" key: " + i + " value: " + Map.get(i));
+        Map<Integer,String> map = new HashMap<Integer,String>();
+        return map;
         }
-    }
 
     /**
      * Get the size of a map. (number of key/value paris)
