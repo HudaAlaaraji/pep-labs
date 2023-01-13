@@ -22,7 +22,7 @@ public class StackExercise {
      */
     public Deque<String> createNewStack(){
         ArrayDeque<String>stack = new ArrayDeque<String>();
-        System.out.println("Elements in stack:" +stack);
+        return stack;
     }
 
     /**
@@ -30,8 +30,8 @@ public class StackExercise {
      * @return the number of elements in the deque.
      */
     public int getSize(Deque<String> stack){
-        int index = items.length;
-        System.out.println("The array length is: " +index);
+        int size = stack.size();
+        return stack.size();
     }
 
     /**
@@ -40,7 +40,7 @@ public class StackExercise {
      * @param item a String to be added to the deque.
      */
     public void addToTopOfStack(Deque<String> stack, String item){
-        push("item");
+        stack.add(item);
     }
 
     /**
@@ -50,8 +50,8 @@ public class StackExercise {
      * @return the value popped from the top of the deque.
      */
     public String removeFromTopOfStack(Deque<String> stack){
-        String removedele = q.remove();
-        System.out.println("removed element-" + removedele);
+       String removedele = stack.remove();
+        return removedele;
     }
     /**
      * Return the value at the top of a deque without removing the value.
@@ -59,6 +59,7 @@ public class StackExercise {
      * @return the value peeked from the top of the deque.
      */
     public String getTopOfStackWithoutRemoving(Deque<String> stack){
-        return "";
+        String head = stack.peek();
+        return head;
     }
 }
