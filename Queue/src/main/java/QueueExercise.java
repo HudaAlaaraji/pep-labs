@@ -32,7 +32,6 @@ public class QueueExercise {
         Deque<String> deque = new LinkedList<String>();
         return deque;
     }
-
     /**
      * Return the ssize of a queue.
      * @param queue a Queue<String> object.
@@ -42,7 +41,6 @@ public class QueueExercise {
         int size = queue.size();
         return queue.size();
     }
-
     /**
      * Add an item to the end of the queue - the queue will be able to return to that item once all the items
      * in front of it have been removed.
@@ -62,7 +60,6 @@ public class QueueExercise {
         String removedele = queue.remove();
         return removedele;
     }
-
     /**
      * Return the next item from a queue which is due to be removed, but do not remove it.
      * @param queue a Queue<String> object.
