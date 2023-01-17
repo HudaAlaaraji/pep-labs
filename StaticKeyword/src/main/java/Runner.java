@@ -21,9 +21,6 @@ public class Runner {
      *
      * @param in the String value you should change global_var to in.
      */
-    public void changeClassVar(String in){
-        static void setglobal_Var(String global_var){
-            Var.global_var = global_var;
-        }
+    public void changeClassVar(String global_var){
     }
 }
