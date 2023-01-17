@@ -24,10 +24,7 @@ import java.sql.Statement;
  *
  * Let's create our first SQL table.
  * The syntax for Creating a table is as follows:
- * CREATE TABLE table_name(
- *      variable_name1 datatype constraint,
- *      variable_name2 datatype constraint
- * );
+ * 
  *
  * Note: there are two terms in the above syntax that we need to understand:
  * - datatype:
