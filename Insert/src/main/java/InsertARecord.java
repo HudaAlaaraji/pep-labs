@@ -18,7 +18,7 @@ import java.sql.Statement;
  *      - "col_1, col_2, ...col_N"  is referring to the column name of the table.
  *      - "val_1, val_2, ...val_N" is referring to the data we are trying to insert into that specific column.
  *
- * Additional reference material if needed: https://www.w3schools.com/sql/sql_insert.asp
+ * Additional reference material if needed: 
  * */
 public class InsertARecord {
 
