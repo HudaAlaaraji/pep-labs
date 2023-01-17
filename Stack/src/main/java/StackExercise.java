@@ -42,7 +42,6 @@ public class StackExercise {
     public void addToTopOfStack(Deque<String> stack, String item){
         stack.add(item);
     }
-
     /**
      * Remove the value from the top of the deque and return that value.
      * (The method used to remove items from a stack also returns the value.)
