@@ -1,0 +1,1 @@
+SELECT * FROM employee WHERE firstname, salary NOT IN ('Steve', >50,000);
