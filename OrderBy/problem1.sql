@@ -1,0 +1,1 @@
+SELECT * FROM charactertable ORDER BY lastname [first name] [ASC]
