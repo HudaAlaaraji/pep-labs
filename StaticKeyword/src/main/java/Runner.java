@@ -22,8 +22,6 @@ public class Runner {
      * @param in the String value you should change global_var to in.
      */
     public void changeClassVar(String global_var){
-        Runner myStaticVariable = new Runner();
-        myStaticVariable. =in;
-
-    }
+        Runner in = new Runner();
+}
 }
