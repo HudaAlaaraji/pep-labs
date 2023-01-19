@@ -1,6 +1,5 @@
-CREATE TABLE Site_user (
-           id INT PRIMARY KEY,
-           username varchar(100),
-           password varchar(100),
-           id INT(100),
+CREATE TABLE song (
+           id SERIAL PRIMARY KEY,
+           artist varchar(100),
+           title varchar(100)
        );
