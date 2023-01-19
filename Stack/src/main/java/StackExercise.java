@@ -49,16 +49,14 @@ public class StackExercise {
      * @return the value popped from the top of the deque.
      */
     public String removeFromTopOfStack(Deque<String> stack){
-       String removedele = stack.remove();
-        return removedele;
+        return stack.removeLast();
     }
-    /**
+    /** Array_Deque.remove () ,  Return Value
      * Return the value at the top of a deque without removing the value.
      * @param stack A Deque of Strings.
      * @return the value peeked from the top of the deque.
      */
     public String getTopOfStackWithoutRemoving(Deque<String> stack){
-        String head = stack.peek();
-        return head;
+       return stack.peekLast();
     }
 }
