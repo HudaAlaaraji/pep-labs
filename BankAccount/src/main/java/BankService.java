@@ -32,11 +32,8 @@ public class BankService {
      * @param amount the amount to be withdrawn.
      */
     public void withdraw(double amount){
-        double balance;
-        if (balance < amount) {
-            return
+        this.balance -= amount;
         }
-    }
 
     /**
      * There is no need to change this method, it will be used in testing and in the menu class.
