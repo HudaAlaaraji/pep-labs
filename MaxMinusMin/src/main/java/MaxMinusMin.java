@@ -13,7 +13,6 @@ public class MaxMinusMin {
     public int difference(List<Integer> nums){
         int smallest = Integer.MAX_VALUE;
         int largest = Integer.MIN_VALUE;
-        for (int i; i > 0; i++) 
-        return (largest -= smallest);
+        return (largest - smallest);
     }
 }
