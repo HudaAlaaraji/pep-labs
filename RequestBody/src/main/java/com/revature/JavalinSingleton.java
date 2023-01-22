@@ -50,7 +50,7 @@ public class JavalinSingleton {
 
                 //utilize jackson convert back the user object to a json string
                 ObjectMapper om = new ObjectMapper();
-                Song song ='om.writeValueAsString(jsonString, Song.class)':
+                Song song = om.writeValueAsString(jsonString, Song.class);
 
                // we need to let the request know we will send back json in the body
                ctx.contentType("application/json");
@@ -58,7 +58,7 @@ public class JavalinSingleton {
 
                //utilize jackson convert back the user object to a json string
                String jsonStringToBeReturned = om.writevalueAsString("Beatles");
-               
+
                //return the json string in the response body
                ctx.result(jsonStringToBeReturned);
             });
