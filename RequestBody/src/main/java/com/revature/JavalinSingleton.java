@@ -20,23 +20,8 @@ public class JavalinSingleton {
                 //retrieve the json string from the request body
                String jsonString = ctx.body();
 
-               //utilize jackson to convert the json string to a user object
-               ObjectMapper om = new ObjectMapper();
-               Song song = om.readValue(jsonString, Song.class);
-
-               // we need to let the request know we will send back json in the body
-               ctx.contentType("application/json");
-
-               //change the last name
-                song.setArtistName("song name");
-
-               //utilize jackson convert back the user object to a json string
-               String jsonStringToBeReturned = om.writevalueAsString(song);
-
-               //return the json string in the response body
-               ctx.result(jsonStringToBeReturned);
         });
-        
+
         /**
          * problem2: retrieve the song object from the request body...
          *      1. update the artist in the song object to "Beatles"
@@ -45,16 +30,16 @@ public class JavalinSingleton {
          * Note: Please refer to the "RequestBody.MD" file for more assistance if needed.
          */
         app.post("/problem2", ctx -> {
-            //retrieve the json string from the request body
-               String jsonString = ctx.body();
-               //utilize jackson to convert the json string to a user object
-               ObjectMapper om = new ObjectMapper();
-               Song song = om.readValue(jsonString, song.class);
+                   //retrieve the json string from the request body
+                String jsonString = ctx.body();
+                //utilize jackson convert back the user object to a json string
+                ObjectMapper om = new ObjectMapper();
+                Song song ='om.writeValueAsString(jsonString, Song.class)':
                // we need to let the request know we will send back json in the body
                ctx.contentType("application/json");
                song.setArtistName("Beetles");
                //utilize jackson convert back the user object to a json string
-               String jsonStringToBeReturned = om.writevalueAsString(song);
+               String jsonStringToBeReturned = om.writevalueAsString("Beatles");
                //return the json string in the response body
                ctx.result(jsonStringToBeReturned);
             });
