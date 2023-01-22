@@ -23,5 +23,6 @@ public class ArraysAreEqual {
 }
     }
 }
+   //may be Arrays.equals(a,b); ???
 
 
