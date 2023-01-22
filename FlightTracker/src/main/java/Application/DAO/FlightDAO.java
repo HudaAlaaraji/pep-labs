@@ -145,7 +145,7 @@ public class FlightDAO {
     public void updateFlight(int id, Flight flight){
         Connection connection = ConnectionUtil.getConnection();
         try {
-            String sql = "UPDATE flight SET departure_city=? WHERE flight_id=?";
+            String sql = "UPDATE flight SET departure_city=? WHERE flight_id=?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write PreparedStatement setString and setInt methods here.
