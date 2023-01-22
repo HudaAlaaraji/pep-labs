@@ -14,7 +14,7 @@ public class SimpleStringMethods {
      * @return the length of string s.
      */
     public int length(String s){
-        return length(s);
+        return s.length();
     }
 
     /**
@@ -24,9 +24,10 @@ public class SimpleStringMethods {
      * @return the character of String s that is located at position n.
      */
     public char charAt(String s, int n){
-        return charAt(s, n);
+        return s.charAt(n);
+        
     }
-
+    
     /**
      * indexOf can be used to retrieve the index of the first character of a String, such as the position of character
      * 'a' in banana, which would result in 1.
@@ -36,7 +37,8 @@ public class SimpleStringMethods {
      * @return the index of the first occurence of c within s.
      */
     public int indexOf(String s, char c){
-        return indexOf(s, c);
+        return s.indexOf(c);
+        
     }
 
 }
