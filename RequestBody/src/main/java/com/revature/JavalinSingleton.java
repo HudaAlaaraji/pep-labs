@@ -20,6 +20,21 @@ public class JavalinSingleton {
                 //retrieve the json string from the request body
                String jsonString = ctx.body();
 
+                //utilize jackson to convert the json string to a user object
+               ObjectMapper om = new ObjectMapper();
+               Song song = om.readValue(jsonString, Song.class);
+               
+               // we need to let the request know we will send back json in the body
+               ctx.contentType("application/json");
+
+               //change the last name
+                song.setArtistName("song name");
+
+               //utilize jackson convert back the user object to a json string
+               String jsonStringToBeReturned = om.writevalueAsString(song);
+
+               //return the json string in the response body
+               ctx.result(jsonStringToBeReturned);
         });
 
         /**
@@ -32,14 +47,18 @@ public class JavalinSingleton {
         app.post("/problem2", ctx -> {
                    //retrieve the json string from the request body
                 String jsonString = ctx.body();
+
                 //utilize jackson convert back the user object to a json string
                 ObjectMapper om = new ObjectMapper();
                 Song song ='om.writeValueAsString(jsonString, Song.class)':
+
                // we need to let the request know we will send back json in the body
                ctx.contentType("application/json");
                song.setArtistName("Beetles");
+
                //utilize jackson convert back the user object to a json string
                String jsonStringToBeReturned = om.writevalueAsString("Beatles");
+               
                //return the json string in the response body
                ctx.result(jsonStringToBeReturned);
             });
