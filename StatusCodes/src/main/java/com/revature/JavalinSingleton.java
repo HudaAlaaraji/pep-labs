@@ -15,12 +15,8 @@ public class JavalinSingleton {
          * Note: Please refer to the "StatusCodes.MD" file for more assistance if needed.
          */
         app.get("/client-side-err", ctx -> {
-        
-            String client-side-er = ctx.pathParam(arg0: "name");
-            Client client = ClientService.getclientbyname(client-side-err);
-            ctx,json(client);
+            ctx.status(400);
         });
-
         return app;
     }
     
