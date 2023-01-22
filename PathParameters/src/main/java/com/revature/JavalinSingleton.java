@@ -15,11 +15,11 @@ public class JavalinSingleton {
          * Note: Please refer to the "PathParameters.MD" file for more assistance if needed.
          */
         app.get("/firstname/{first}", ctx -> {
-            
-            //write code here
 
+            String firstnameName = ctx.pathParam(arg0:"first");
+            Firstname firstname = firstnameService.getfirstnameByFirst(firstName);
+            ctx.json(firstname);
         });
-
 
         return app;
     }
