@@ -16,9 +16,8 @@ public class JavalinSingleton {
          */
         app.get("/firstname/{first}", ctx -> {
 
-            String firstnameName = ctx.pathParam(arg0:"first");
-            Firstname firstname = firstnameService.getfirstnameByFirst(firstName);
-            ctx.json(firstname);
+            String firstName = ctx.pathParam("first");
+            ctx.result("first");
         });
 
         return app;
