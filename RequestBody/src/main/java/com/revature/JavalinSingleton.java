@@ -22,11 +22,13 @@ public class JavalinSingleton {
 
                //utilize jackson to convert the json string to a user object
                ObjectMapper om = new ObjectMapper();
-               Song song = om.readValue(jsonString, song.class);
+               Song song = om.readValue(jsonString, Song.class);
 
                // we need to let the request know we will send back json in the body
                ctx.contentType("application/json");
-               song.setArtistName("song name");
+
+               //change the last name
+                song.setArtistName("song name");
 
                //utilize jackson convert back the user object to a json string
                String jsonStringToBeReturned = om.writevalueAsString(song);
@@ -34,7 +36,7 @@ public class JavalinSingleton {
                //return the json string in the response body
                ctx.result(jsonStringToBeReturned);
         });
-
+        
         /**
          * problem2: retrieve the song object from the request body...
          *      1. update the artist in the song object to "Beatles"
