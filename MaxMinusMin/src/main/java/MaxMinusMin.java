@@ -11,7 +11,7 @@ public class MaxMinusMin {
      * @return the max value of nums minus the min value of nums.
      */
     public int difference(List<Integer> nums){
-        for( int i=0;i< List.nums;i++){
+        for( int i=0;i< List.length;i++){
         int smallest = Integer.MIN_VALUE;
         int largest = Integer.MAX_VALUE;
         System.out.println ((Integer.MIN_VALUE)- (Integer.MAX_VALUE)); 
