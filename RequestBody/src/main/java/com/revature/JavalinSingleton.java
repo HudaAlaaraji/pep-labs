@@ -28,7 +28,7 @@ public class JavalinSingleton {
                ctx.contentType("application/json");
 
                //change the last name
-                song.setArtistName("song name");
+                song.setArtistName("songName");
 
                //utilize jackson convert back the user object to a json string
                String jsonStringToBeReturned = om.writevalueAsString(song);
