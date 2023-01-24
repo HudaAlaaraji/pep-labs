@@ -11,7 +11,12 @@ public class MaxMinusMin {
      * @return the max value of nums minus the min value of nums.
      */
     public int difference(List<Integer> nums){
-       
-        return Integer.MAX_VALUE-Integer.MIN_VALUE;
+        int max;
+        int min;
+       List.MaxMinusMin(Integer);
+      if(nums.isEmpty()){
+        return 0;
+      } 
+      nums.get(0);
     }
 }
