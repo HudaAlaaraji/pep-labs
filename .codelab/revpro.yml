@@ -696,6 +696,9 @@
       indexTest1: 0
       indexTest2: 0
       indexTest3: 0
+      prob1a: 0
+      prob1b: 0
+      prob2a: 0
   IsSorted:
     :Week: 5
     :Order: 11
