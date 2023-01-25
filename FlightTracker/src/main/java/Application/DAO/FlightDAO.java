@@ -112,8 +112,8 @@ public class FlightDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 
             //write preparedStatement's setString and setInt methods here.
-            preparedStatement.setString(1, "?");
-            preparedStatement.setString(2, "?");
+            preparedStatement.setString(1, "departure_city");
+            preparedStatement.setString(2, "arrival_city");
 
             preparedStatement.executeUpdate();
             ResultSet pkeyResultSet = preparedStatement.getGeneratedKeys();
@@ -147,7 +147,7 @@ public class FlightDAO {
     public void updateFlight(int id, Flight flight){
         Connection connection = ConnectionUtil.getConnection();
         try {
-        String sql = "update flights set ColumnName1=departure_city, ColumnName2= arrival where ColumnName3 = id;";
+        String sql = "update flights set departure_city= ? , arrival_city= ? where id = ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write PreparedStatement setString and setInt methods here.
@@ -182,12 +182,12 @@ public class FlightDAO {
         List<Flight> flights = new ArrayList<>();
         try {
             //Write SQL logic here
-            String sql = "select * from flights where ColumnName1 = departure_city and ColumnName2 = arrival_city;";
+            String sql = "select * from flights where departure_city = ? and arrival_city = ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write PreparedStatement setString and setInt methods here.
-            preparedStatement.setString(1,"departure_city");
-            preparedStatement.setInt(2, Integer.valueOf(arrival_city));
+            preparedStatement.setString(1,"flight");
+            preparedStatement.setInt(2, id);
 
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
