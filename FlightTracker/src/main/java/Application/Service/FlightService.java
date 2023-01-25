@@ -61,12 +61,12 @@ public class FlightService {
      *         user should have some insight if they attempted to edit a nonexistent flight.)
      */
     public Flight updateFlight(int flight_id, Flight flight){
-        if (flight_id= Flight.Flight ){
+        if (flight_id= Flight.flight ){
             return flight_id;
         }
         return null;
     }
-
+    
     /**
      * TODO: Use the FlightDAO to retrieve a List containing all flights.
      * You could use the flightDAO.getAllFlights method.
