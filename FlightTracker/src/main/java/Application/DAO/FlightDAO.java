@@ -7,6 +7,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo.Id;
+
 /**
  * A DAO is a class that mediates the transformation of data between the format of objects in Java to rows in a
  * database. The methods here are mostly filled out, you will just need to add a SQL statement.
@@ -186,8 +188,8 @@ public class FlightDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write PreparedStatement setString and setInt methods here.
-            preparedStatement.setString(1,"flight");
-            preparedStatement.setInt(2, id);
+            preparedStatement.setString(1,"departure_city");
+            preparedStatement.setInt(2, Integer.valueOf(arrival_city));
 
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
