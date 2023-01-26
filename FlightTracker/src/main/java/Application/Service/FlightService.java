@@ -61,11 +61,17 @@ public class FlightService {
      *         user should have some insight if they attempted to edit a nonexistent flight.)
      */
     public Flight updateFlight(int flight_id, Flight flight){
-        Flight flightFromDb = this.flightDao.getFlight
-        }
+        Flight flightFromDb = this.flightDao.getFlightById(flight_id);
+        if (flightFormedDb==null){
         return null;
     }
-    
+    else {
+        flightDAO.updateFlight(flight_id, flight);
+    }
+    return flightDAO.getFlightById(flight_id);
+}
+
+if flightDAO.getFlightById returns null for the flight's ID
     /**
      * TODO: Use the FlightDAO to retrieve a List containing all flights.
      * You could use the flightDAO.getAllFlights method.
@@ -73,7 +79,7 @@ public class FlightService {
      * @return all flights in the database.
      */
     public List<Flight> getAllFlights() {
-        Select * from Flights;
+        return Flight.flightDAO.getAllFlights();
     }
 
     /**
@@ -85,6 +91,6 @@ public class FlightService {
      * @return all flights departing from departure_city and arriving at arrival_city.
      */
     public List<Flight> getAllFlightsFromCityToCity(String departure_city, String arrival_city) {
-        return Flights(departure_city, arrival_city);
+        return FlightDAO.getAllFlightsFromCityToCity(departure_city, arrival_city);
     }
 }
