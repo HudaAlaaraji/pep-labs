@@ -61,7 +61,7 @@ public class FlightService {
      *         user should have some insight if they attempted to edit a nonexistent flight.)
      */
     public Flight updateFlight(int flight_id, Flight flight){
-        Flight flightFromDb = 
+        Flight flightFromDb = this.flightDao.getFlight
         }
         return null;
     }
