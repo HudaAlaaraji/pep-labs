@@ -1,8 +1,6 @@
 CREATE VIEW firstname_lastname AS SELECT firstname, lastname FROM site_user;
 
 
-
-
 --CREATE VIEW view_name AS
 --SELECT column1, column2, ...
 --FROM table_name
