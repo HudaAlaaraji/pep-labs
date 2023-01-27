@@ -1,5 +1,4 @@
-
-//
+import java.util.Arrays;
 
 public class IndexOf {
     /**
@@ -11,11 +10,19 @@ public class IndexOf {
      * @return the first index (position) of n in arr. if n does not exist in arr, return -1.
      */
     public int getIndex(int[] arr, int n){
-       arr[0] =arr[n];
-            if(arr[n] = null){
-                return -1;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]== n){
+                return arr[i];
+    }
+    else{
+        return -1;
     }
 }
+    }
 }
+
+
+
+
 
 
