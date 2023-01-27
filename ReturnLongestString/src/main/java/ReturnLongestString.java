@@ -9,11 +9,12 @@ public class ReturnLongestString {
      */
     public String longest(String[] arr){
       arr.toString();
-      for(int i=1; i< arr[i].length(); i++){
-      return arr[i].length();
+      String str; 
+      String thelongest;
+      for(int i=0; i< str.length(); i++){
+      if(str.length()> str.length(arr.size()-2)){
+      return str.length();
       }
     }
   }
-
-    
-     
+}
