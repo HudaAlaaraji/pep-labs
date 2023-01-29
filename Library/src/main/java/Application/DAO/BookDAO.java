@@ -96,7 +96,7 @@ public class BookDAO {
             preparedStatement.setString(1, book.getTitle());
             preparedStatement.setInt(1, book.getAuthor_id());
             preparedStatement.setInt(1, book.getCopies_available());
-            
+
             preparedStatement.executeUpdate();
             return book;
         }catch(SQLException e){
@@ -118,7 +118,11 @@ public class BookDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setInt method here.
-            preparedStatement.setInt(1, copies_available);
+            preparedStatement.setInt(1, Book.getCopies_available());
+
+            //public List<Book> getAllAvailableBooks() {
+                //return bookDAO.getBooksWithBookCountOverZero();
+
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
                 Book book = new Book(rs.getInt("isbn"),
