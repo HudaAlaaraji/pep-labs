@@ -1,4 +1,5 @@
-import java.util.*;
+
+
 
 public class Pyramid {
     /**
@@ -28,6 +29,21 @@ public class Pyramid {
      * @return a string representation of the pyramid.
      */
     public String returnPyramid(int n){
-        Scanner in = new Scanner (System.in); int r = 0, i, j; // r - denotes the number of rows System.out.println ("-----To print the half pyramid enter the number of rows-----"); r = in.nextInt (); System.out.print ("n"); for (i = 1; i <= r; ++i) { for (j = 1; j <= i; ++j) System.out.print ("* "); System.out.print ("n"); } } }
+            for(int i=1; i <= n; i++){
+                for(int j=1; j <= i; j++){
+                    System.out.println("* ");
+                }
+                System.out.println();
+            }
+        }
+    }
 
+
+
+
+
+
+    
+    
+    
     
