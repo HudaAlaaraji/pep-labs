@@ -37,11 +37,17 @@ public class Pyramid {
         System.out.print("\n");
         for (i = 1; i <= r; ++i) {
             for (j = 1; j <= i; ++j)
-                System.out.print("* ");
+                System.out.println("* ");
             System.out.print("\n");
         }
     }
+    //public static void main(String args[])
+    {
+        //int k = r;
+        //returnPyramid(k);
+    }
 }
+
 
 
 
