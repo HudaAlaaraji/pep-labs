@@ -88,7 +88,7 @@ public class BookDAO {
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-            String sql = "INSERT INTO book (isbn, title, author_id, copies_available )VALUES(?,?,?,?);" ;
+            String sql = "INSERT INTO book (isbn, title, author_id, cpoies_available)VALUES(?,?,?,?);" ;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setString and setInt methods here.
@@ -118,10 +118,7 @@ public class BookDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setInt method here.
-            preparedStatement.setInt(1, Book.getCopies_available());
-
-            //public List<Book> getAllAvailableBooks() {
-                //return bookDAO.getBooksWithBookCountOverZero();
+            preparedStatement.setInt(1, .getIsbn());
 
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
