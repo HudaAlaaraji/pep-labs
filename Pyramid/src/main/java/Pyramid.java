@@ -32,7 +32,7 @@ public class Pyramid {
     public String returnPyramid(int n){
         Scanner in = new Scanner(System.in);
         int r = 0, i, j;
-        System.out.println("r");
+        System.out.println("n");
         r = in.nextInt();
         System.out.print("\n");
         for (i = 1; i <= r; ++i) {
@@ -41,12 +41,13 @@ public class Pyramid {
             System.out.print("\n");
         }
     }
+}
     //public static void main(String args[])
-    {
+    
         //int k = r;
         //returnPyramid(k);
-    }
-}
+    
+
 
 
 
