@@ -118,7 +118,7 @@ public class BookDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setInt method here.
-            preparedStatement.setInt(1, bookDAO.getBooksWithBookCountOverZero());
+            preparedStatement.setInt(1, Book.getBooksWithBookCountOverZero());
 
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
