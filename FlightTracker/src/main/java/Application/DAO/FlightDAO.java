@@ -34,7 +34,7 @@ public class FlightDAO {
         Connection connection = ConnectionUtil.getConnection();
         List<Flight> flights = new ArrayList<>();
         try {
-            String sql = "Select * from flights";
+            String sql = "Select * from flight";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             ResultSet rs = preparedStatement.executeQuery();
@@ -67,7 +67,7 @@ public class FlightDAO {
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-            String sql = "select * from flights where flight_id = ?";
+            String sql = "select * from flight where flight_id = ?";
             
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
@@ -149,13 +149,13 @@ public class FlightDAO {
     public void updateFlight(int id, Flight flight){
         Connection connection = ConnectionUtil.getConnection();
         try {
-        String sql = "update flights set departure_city= ? , arrival_city= ? where flight_id = ?;";
+        String sql = "update flight set departure_city= ? , arrival_city= ? where flight_id = ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write PreparedStatement setString and setInt methods here.
             preparedStatement.setString(1,flight.getDeparture_city());
             preparedStatement.setString(2,flight.getArrival_city());
-            preparedStatement.setInt(3,flight.flight_id);
+            preparedStatement.setInt(3, id);
             preparedStatement.executeUpdate();
         }catch(SQLException e){
             System.out.println(e.getMessage());
@@ -184,12 +184,12 @@ public class FlightDAO {
         List<Flight> flights = new ArrayList<>();
         try {
             //Write SQL logic here
-            String sql = "select * from flights where departure_city = ? and arrival_city = ?;";
+            String sql = "select * from flight where departure_city = ? and arrival_city = ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write PreparedStatement setString and setInt methods here.
-            preparedStatement.setString(1,"departure_city");
-            preparedStatement.setInt(2, Integer.valueOf(arrival_city));
+            preparedStatement.setString(1,departure_city);
+            preparedStatement.setString(2, arrival_city);
 
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
