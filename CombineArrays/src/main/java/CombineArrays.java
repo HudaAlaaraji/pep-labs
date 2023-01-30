@@ -8,11 +8,14 @@ public class CombineArrays {
      * @return an array containing the contents of arr1 followed by the contents of arr2.
      */
     public int[] combine(int[] arr1, int[] arr2){
-        int[]a = {0};
-        int[]b = {0};
-        int[]c = c.concat(a,b);
-        for(int i=0; i<c.length; i++)
-    System.out.print(c[i]+" ");
+        int[] concatenateInt = combineInt(arr1, arr2);
+        System.out.println("concatenated Int array : " + Arrays.toString(concatenateInt));
     }
-}
-       
+
+
+
+ //int[]a = {0};
+//int[]b = {0};
+//int[]c = c.concat(a+b);
+//for(int i=0; i<c.length; i++)
+//System.out.print(c[i]+" ");
