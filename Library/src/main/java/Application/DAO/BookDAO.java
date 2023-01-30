@@ -93,8 +93,8 @@ public class BookDAO {
 
             //write preparedStatement's setString and setInt methods here.
             preparedStatement.setInt(1, book.getIsbn());
-            preparedStatement.setString(1, book.getTitle());
             preparedStatement.setInt(1, book.getAuthor_id());
+            preparedStatement.setString(1, book.getTitle());
             preparedStatement.setInt(1, book.getCopies_available());
 
             preparedStatement.executeUpdate();
