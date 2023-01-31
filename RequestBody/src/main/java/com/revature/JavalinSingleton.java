@@ -29,14 +29,11 @@ public class JavalinSingleton {
                // we need to let the request know we will send back json in the body
                ctx.contentType("application/json");
 
-                 //change the last name
-                 song.setSongName("songName");
-
-                 //utilize jackson convert back the song object to a json string
-                 String jsonStringToBeReturned = om.writeValueAsString(song);
+                // get artist name
+                 song.getArtistName();
   
                  //return the json string in the response body
-                 ctx.result(jsonStringToBeReturned);
+                 ctx.result(song.getArtistName());
         });
 
 
@@ -62,10 +59,10 @@ public class JavalinSingleton {
                song.setArtistName("Beetles");
 
                //utilize jackson convert back the user object to a json string
-               String jsonStringToBeReturned = om.writeValueAsString(song);
+               String updatedArtist = om.writeValueAsString(song);
 
                //return the json string in the response body
-               ctx.result(jsonStringToBeReturned);
+               ctx.result(updatedArtist);
             });
 
         return app;
