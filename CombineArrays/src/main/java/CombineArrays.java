@@ -11,6 +11,7 @@ public class CombineArrays {
         int[] concatenateInt = combineInt(arr1, arr2);
         System.out.println("concatenated Int array : " + Arrays.toString(concatenateInt));
     }
+}
 
 
 
