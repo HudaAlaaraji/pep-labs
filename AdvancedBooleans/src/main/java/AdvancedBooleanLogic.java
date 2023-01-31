@@ -31,7 +31,7 @@ public class AdvancedBooleanLogic {
         if(b1 || b2 == true){
             return true;
         }
-        else if(b1 && b2 == true||b1 && b2 == false){
+        else if((b1 && b2 == true)||(b1 && b2 == false)){
             return false;
         }
     }
