@@ -59,10 +59,10 @@ public class JavalinSingleton {
                song.setArtistName("Beetles");
 
                //utilize jackson convert back the user object to a json string
-               String artistnamereturned = om.writeValueAsString(song);
+               String artistNamereturned = om.writeValueAsString(song);
 
                //return the json string in the response body
-               ctx.result(artistnamereturned);
+               ctx.result(artistNamereturned);
             });
 
         return app;
