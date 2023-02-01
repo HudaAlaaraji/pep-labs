@@ -55,7 +55,6 @@ public class BookService {
         if(bookDAO.getBookByIsbn(isbn)!=null){
             return null;
         }else{
-
         }
         return bookDAO.insertBook(book);
     }
