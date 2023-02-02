@@ -69,6 +69,7 @@ public class BookDAO {
                         rs.getInt("author_id"),
                         rs.getString("title"),
                         rs.getInt("copies_available"));
+                        System.out.println(book);
                 return book;
             }
         }catch(SQLException e){
@@ -93,9 +94,9 @@ public class BookDAO {
 
             //write preparedStatement's setString and setInt methods here.
             preparedStatement.setInt(1, book.getIsbn());
-            preparedStatement.setInt(1, book.getAuthor_id());
-            preparedStatement.setString(1, book.getTitle());
-            preparedStatement.setInt(1, book.getCopies_available());
+            preparedStatement.setInt(2, book.getAuthor_id());
+            preparedStatement.setString(3, book.getTitle());
+            preparedStatement.setInt(4, book.getCopies_available());
 
             preparedStatement.executeUpdate();
             return book;
