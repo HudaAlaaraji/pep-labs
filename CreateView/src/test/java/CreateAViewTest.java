@@ -88,8 +88,8 @@ public class CreateAViewTest {
             String sql4 = "INSERT INTO site_user (firstname, lastname, age) VALUES ('Steve', 'Jones', 29);";
             String sql5 = "INSERT INTO site_user (firstname, lastname, age) VALUES ('Brandon', 'Smith', 50);";
             String sql6 = "INSERT INTO site_user (firstname, lastname, age) VALUES ('Adam', 'Jones', 61);";
-
-            PreparedStatement ps = connection.prepareStatement(sql1 + sql2 + sql3 + sql4 + sql5 + sql6);
+            String sql7 = "DROP VIEW firstname_lastname;";
+            PreparedStatement ps = connection.prepareStatement(sql1 + sql2 + sql3 + sql4 + sql5 + sql6 + sql7);
 
             ps.executeUpdate();
 
@@ -106,8 +106,8 @@ public class CreateAViewTest {
         try {
 
             Connection connection = ConnectionUtil.getConnection();
+            String sql2 = "DROP VIEW FIRSTNAME_LASTNAME;";
             String sql = "DROP TABLE site_user;";
-            String sql2 = "DROP VIEW firstname_lastname;";
 
             PreparedStatement ps = connection.prepareStatement(sql + sql2);
 
