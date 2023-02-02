@@ -56,7 +56,7 @@ public class JavalinSingleton {
                ctx.contentType("application/json");
                
                //update the artist in the song object to "Beatles"
-               song.setArtistName("Beetles");
+               song.setArtistName("Beatles");
 
                //utilize jackson convert back the user object to a json string
                String artistNamereturned = om.writeValueAsString(song);
