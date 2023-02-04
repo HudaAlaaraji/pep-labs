@@ -26,10 +26,13 @@ public class OtherStringMethods {
      * and 0 if s1 is equivalent to s2.
      */
     public int compareLexigraphically(String s1, String s2){
-        if (s1>s2){
-            return >0;
+        int number;
+        for(int i=0; i< s1.length; i++){
+            for(int j=0; j< s2.length; j++)
+        if (s1 > s2){
+            return  number > 0;
         }else if(s1<s2){
-        return <0;
+        return number < 0;
     } else if(s1=s2){
         return 0;
     }
