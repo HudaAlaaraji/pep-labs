@@ -1,7 +1,7 @@
-package DAO;
+package Application.DAO;
 
-import Util.ConnectionUtil;
-import Application.Model.Account;
+import Application.Util.ConnectionUtil;
+import Application.Model.Book;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DAO {
+public class BookDAO {
     /**
      * TODO: retrieve all books from the Book table.
      * You only need to change the sql String.
