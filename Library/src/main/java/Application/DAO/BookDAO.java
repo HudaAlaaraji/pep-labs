@@ -1,7 +1,7 @@
-package Application.DAO;
+package DAO;
 
-import Application.Util.ConnectionUtil;
-import Application.Model.Book;
+import Util.ConnectionUtil;
+import Application.Model.Account;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,18 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * A DAO is a class that mediates the transformation of data between the format of objects in Java to rows in a
- * database. The methods here are mostly filled out, you will just need to add a SQL statement.
- *
- * We may assume that the database has already created a table named 'book'.
- * It contains similar values as the Author class:
- * isbn, which is of type int and is a primary key,
- * author_id, which is of type int, and is a foreign key associated with the column 'id' of 'author',
- * name, which is of type varchar(255),
- * copies_available, which is of type int.
- */
-public class BookDAO {
+public class DAO {
     /**
      * TODO: retrieve all books from the Book table.
      * You only need to change the sql String.
