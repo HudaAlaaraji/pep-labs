@@ -11,7 +11,7 @@ public class OtherStringMethods {
      * @return
      */
     public String partOfString(String s, int start, int end){
-        return "s(start,end)";
+       return s.substring(start, end);
     }
 
     /**
@@ -26,15 +26,7 @@ public class OtherStringMethods {
      * and 0 if s1 is equivalent to s2.
      */
     public int compareLexigraphically(String s1, String s2){
-        int number;
-        for(int i=0; i< s1.length; i++){
-            for(int j=0; j< s2.length; j++)
-        if (s1 > s2){
-            return  number > 0;
-        }else if(s1<s2){
-        return number < 0;
-    } else if(s1=s2){
-        return 0;
+     return  s1.compareTo(s2);
     }
 
     /**
@@ -47,6 +39,6 @@ public class OtherStringMethods {
      * @return an array of Strings that represent s1 split by splitAround.
      */
     public String[] splitStringIntoMultipleStrings(String s1, String splitAround){
-        return null;
+        return s1.split(" ");
     }
 }
