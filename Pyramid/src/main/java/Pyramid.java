@@ -37,6 +37,7 @@ public class Pyramid {
             System.out.println("* ");
             }
         System.out.println("/n");
+
     }
 }
 }
