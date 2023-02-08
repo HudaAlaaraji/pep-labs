@@ -12,7 +12,7 @@ public class RemoveAllCharacter {
      * @return str, without any characters of type ch.
      */
     public String removeAll(String str, String ch){
-        str = str.replaceAll("ch","");
+        str = str.replaceAll("ch", "");
         return str;
     }
 }
