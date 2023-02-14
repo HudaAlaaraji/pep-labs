@@ -108,12 +108,10 @@ public class FlightDAO {
     public Flight insertFlight(Flight flight){
         Connection connection = ConnectionUtil.getConnection();
         try {
-            //Write SQL logic here. When inserting, you only need to define the departure_city and arrival_city
-            //values (two columns total!)
+        
             String sql = "insert into flight (departure_city, arrival_city) values (?, ?);";
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 
-            //write preparedStatement's setString and setInt methods here.
             preparedStatement.setString(1, flight.departure_city);
             preparedStatement.setString(2, flight.arrival_city);
 
@@ -183,11 +181,10 @@ public class FlightDAO {
         Connection connection = ConnectionUtil.getConnection();
         List<Flight> flights = new ArrayList<>();
         try {
-            //Write SQL logic here
+
             String sql = "select * from flight where departure_city = ? and arrival_city = ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
-            //write PreparedStatement setString and setInt methods here.
             preparedStatement.setString(1,departure_city);
             preparedStatement.setString(2, arrival_city);
 
