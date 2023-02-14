@@ -107,9 +107,6 @@ public class BookDAO {
             String sql = "SELECT * FROM book WHERE copies_available > 0";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
-            //write preparedStatement's setInt method here.
-            //preparedStatement.setString(1, Book.getBooksWithBookCountOverZero());
-
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
                 Book book = new Book(rs.getInt("isbn"),
