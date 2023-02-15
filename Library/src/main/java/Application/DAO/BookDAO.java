@@ -45,11 +45,9 @@ public class BookDAO {
     public Book getBookByIsbn(int isbn){
         Connection connection = ConnectionUtil.getConnection();
         try {
-            //Write SQL logic here
+            
             String sql = "SELECT * FROM book WHERE isbn = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-
-            //write preparedStatement's setInt method here.
             preparedStatement.setInt(1, isbn);
 
             ResultSet rs = preparedStatement.executeQuery();
