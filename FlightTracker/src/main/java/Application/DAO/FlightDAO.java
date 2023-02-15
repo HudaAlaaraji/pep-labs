@@ -66,14 +66,9 @@ public class FlightDAO {
     public Flight getFlightById(int id){
         Connection connection = ConnectionUtil.getConnection();
         try {
-            //Write SQL logic here
             String sql = "select * from flight where flight_id = ?";
-            
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-
-            //write preparedStatement's setString and setInt methods here.
             preparedStatement.setInt(1, id);
-
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
                 Flight flight = new Flight(rs.getInt("flight_id"), rs.getString("departure_city"),
@@ -149,8 +144,6 @@ public class FlightDAO {
         try {
         String sql = "update flight set departure_city= ? , arrival_city= ? where flight_id = ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-
-            //write PreparedStatement setString and setInt methods here.
             preparedStatement.setString(1,flight.getDeparture_city());
             preparedStatement.setString(2,flight.getArrival_city());
             preparedStatement.setInt(3, id);
